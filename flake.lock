@@ -147,11 +147,11 @@
     "claude-code-plugins-plus": {
       "flake": false,
       "locked": {
-        "lastModified": 1780017665,
-        "narHash": "sha256-U9oUugumjE9OCaHXIVzaMUtCH/yy3HtTcu4NbekajoI=",
+        "lastModified": 1780028464,
+        "narHash": "sha256-BD+CVsMkELcFPk8tTGqTuz4AWB6MA/S6w7sq0jGyuJA=",
         "owner": "jeremylongshore",
         "repo": "claude-code-plugins-plus",
-        "rev": "4801da6b43dfc3338e17031cdcbe458c3d45ff11",
+        "rev": "0c3a6adc68ce307ab8586acb42a3091eaa2c6951",
         "type": "github"
       },
       "original": {
