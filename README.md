@@ -1,6 +1,6 @@
 # nix-ai
 
-[![CI](https://github.com/JacobPEvans/nix-ai/actions/workflows/ci-gate.yml/badge.svg)](https://github.com/JacobPEvans/nix-ai/actions/workflows/ci-gate.yml)
+[![CI](https://github.com/amatos/dryvist-nix-ai/actions/workflows/ci-gate.yml/badge.svg)](https://github.com/amatos/dryvist-nix-ai/actions/workflows/ci-gate.yml)
 
 ## Your AI coding toolkit, declared once. Reproduced everywhere
 
@@ -37,7 +37,7 @@ Add to your Nix flake:
 ```nix
 {
   inputs.nix-ai = {
-    url = "github:JacobPEvans/nix-ai";
+    url = "github:amatos/dryvist-nix-ai";
     inputs.nixpkgs.follows = "nixpkgs";
     inputs.home-manager.follows = "home-manager";
   };
@@ -74,7 +74,7 @@ orbstack-kubernetes Bifrost gateway can import it directly so `model: "default"`
 prefix-free without duplicating the registry.
 
 ```nix
-inputs.nix-ai.url = "github:JacobPEvans/nix-ai";
+inputs.nix-ai.url = "github:amatos/dryvist-nix-ai";
 # ...
 # Build Bifrost alias table from role names to mlx-local/ prefixed physical IDs
 aliases = lib.mapAttrs
@@ -159,8 +159,8 @@ This repo is one of three that work together:
 | Repo | What it does |
 | ---- | ------------ |
 | **nix-ai** (you are here) | AI coding tools |
-| [nix-home](https://github.com/JacobPEvans/nix-home) | Dev environment (git, zsh, VS Code, tmux) |
-| [nix-darwin](https://github.com/JacobPEvans/nix-darwin) | macOS system config (consumes both) |
+| [dryvist-nix-home](https://github.com/amatos/dryvist-nix-home) | Dev environment (git, zsh, VS Code, tmux) |
+| [dryvist-nix-darwin](https://github.com/amatos/dryvist-nix-darwin) | macOS system config (consumes both) |
 
 ## License
 

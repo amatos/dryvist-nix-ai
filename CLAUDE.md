@@ -93,6 +93,6 @@ Port allocation lives in [`docs/architecture/system-integration-map.md`](docs/ar
 
 ## Related Repos
 
-This repo exports home-manager modules consumed by [`nix-darwin`](https://github.com/JacobPEvans/nix-darwin).
-Sibling repos: [`nix-home`](https://github.com/JacobPEvans/nix-home) (user dev environment) and
+This repo exports home-manager modules consumed by [`dryvist-nix-darwin`](https://github.com/amatos/dryvist-nix-darwin).
+Sibling repos: [`dryvist-nix-home`](https://github.com/amatos/dryvist-nix-home) (user dev environment) and
 [`nix-devenv`](https://github.com/JacobPEvans/nix-devenv) (reusable dev shells).

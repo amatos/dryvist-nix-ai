@@ -120,7 +120,7 @@ in
 
         # pal-mcp — PAL launcher with baked-in env vars.
         # Env vars survive Claude Code's ~/.claude.json rewrites
-        # (JacobPEvans/nix-ai#557). Dynamic paths interpolated by Nix;
+        # (amatos/dryvist-nix-ai#557). Dynamic paths interpolated by Nix;
         # static config in scripts/pal-mcp.sh.
         (pkgs.writeShellApplication {
           name = "pal-mcp";
