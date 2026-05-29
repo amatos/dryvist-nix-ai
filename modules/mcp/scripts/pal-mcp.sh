@@ -7,7 +7,7 @@
 #
 # Enabled tools: chat, listmodels, clink, consensus
 # All other PAL tools disabled — native equivalents exist or the tool is unnecessary.
-# See: JacobPEvans/nix-ai#450 for the full audit matrix.
+# See: amatos/dryvist-nix-ai#450 for the full audit matrix.
 export DISABLED_TOOLS="thinkdeep,planner,codereview,precommit,debug,analyze,tracer,refactor,testgen,secaudit,docgen,apilookup,challenge,version"
 # 'auto' = PAL picks model alias per-task; Bifrost routes to the right provider.
 export DEFAULT_MODEL="auto"

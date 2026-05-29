@@ -1,4 +1,4 @@
-# OSV Scanner config — local override for JacobPEvans/nix-ai.
+# OSV Scanner config — local override for amatos/dryvist-nix-ai.
 #
 # The reusable workflow at JacobPEvans/.github/.github/workflows/_osv-scan.yml
 # auto-applies this file when present (otherwise it falls back to the org-wide
@@ -26,7 +26,7 @@
 # boundary they accept for any locally-installed Python ML stack.
 # Upstream status (2026-05-20): no fix; OSV reports introduced=0 / no fixed
 # event for every version, including the brand-new 5.9.0.
-# Tracked in: https://github.com/JacobPEvans/nix-ai/issues/812
+# Tracked in: https://github.com/amatos/dryvist-nix-ai/issues/812
 
 [[IgnoredVulns]]
 id = "PYSEC-2025-211"
@@ -34,7 +34,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14920 / ZDI-CAN-25423.
 Perceiver Model deserialization RCE. Local AV.
-No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -43,7 +43,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14921.
 Model-parsing deserialization RCE (same ZDI advisory family as PYSEC-2025-211).
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -52,7 +52,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14922.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -61,7 +61,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14923.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -70,7 +70,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14924.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -79,7 +79,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14925.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -88,7 +88,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14926.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -97,7 +97,7 @@ ignoreUntil = 2026-08-20
 reason = """
 transformers 5.8.1 (CVSS 7.8) — CVE-2025-14927.
 Model-parsing deserialization RCE.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 # ============================================================================
@@ -107,14 +107,14 @@ Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
 # Local AV — same threat model as transformers (we only load files we control).
 # Upstream PR for CVE-2026-4538 is pending; remaining CVEs have no fix.
 # Latest published torch is 2.12.0 (2026-05-13); all versions still affected.
-# Tracked in: https://github.com/JacobPEvans/nix-ai/issues/812
+# Tracked in: https://github.com/amatos/dryvist-nix-ai/issues/812
 
 [[IgnoredVulns]]
 id = "PYSEC-2025-189"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 7.5) — model-load deserialization.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -122,7 +122,7 @@ id = "PYSEC-2025-190"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 2.0) — low-severity follow-on of PYSEC-2025-189.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -130,7 +130,7 @@ id = "PYSEC-2025-191"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 5.5) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -138,7 +138,7 @@ id = "PYSEC-2025-192"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 4.8) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -146,7 +146,7 @@ id = "PYSEC-2025-193"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 4.8) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -154,7 +154,7 @@ id = "PYSEC-2025-194"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 4.8) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -162,7 +162,7 @@ id = "PYSEC-2025-195"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 4.8) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -170,7 +170,7 @@ id = "PYSEC-2025-196"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 5.5) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -178,7 +178,7 @@ id = "PYSEC-2025-197"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 4.8) — model-loader family.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -186,7 +186,7 @@ id = "PYSEC-2025-210"
 ignoreUntil = 2026-08-20
 reason = """
 torch 2.10.0 (CVSS 3.3) — low-severity follow-on.
-Local AV. No upstream fix. Tracked in JacobPEvans/nix-ai#812.
+Local AV. No upstream fix. Tracked in amatos/dryvist-nix-ai#812.
 """
 
 [[IgnoredVulns]]
@@ -196,7 +196,7 @@ reason = """
 torch 2.10.0 (CVSS 7.8) — CVE-2026-4538.
 pt2 Loading Handler deserialization. Local AV. Upstream PR is pending
 but no release as of 2026-05-20.
-Tracked in JacobPEvans/nix-ai#812.
+Tracked in amatos/dryvist-nix-ai#812.
 """
 
 # ============================================================================
@@ -211,7 +211,7 @@ ignoreUntil = 2026-08-20
 reason = """
 joblib 1.5.3 (CVSS 7.5) — deserialization in Memory.cache results.
 Local AV. Already on latest published version; no upstream fix exists.
-Tracked in JacobPEvans/nix-ai#812.
+Tracked in amatos/dryvist-nix-ai#812.
 """
 
 # ============================================================================
@@ -226,5 +226,5 @@ ignoreUntil = 2026-08-20
 reason = """
 nltk 3.9.4 (CVSS 7.5) — local file load issue.
 Local AV. Already on latest published version; no upstream fix exists.
-Tracked in JacobPEvans/nix-ai#812.
+Tracked in amatos/dryvist-nix-ai#812.
 """

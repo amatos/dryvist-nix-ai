@@ -25,7 +25,7 @@ PAL MCP exposes four enabled tools:
 | `consensus` | Multi-model voting/agreement. No native equivalent. |
 
 All other PAL tools have native Claude Code or Bifrost equivalents and are
-disabled. See the Phase 3 audit matrix on `JacobPEvans/nix-ai#450` for the
+disabled. See the Phase 3 audit matrix on `amatos/dryvist-nix-ai#450` for the
 full mapping.
 
 The availability-check protocol below **applies to `clink` and `consensus`**
@@ -121,4 +121,4 @@ If PAL fails after the protocol:
 - **Bifrost model catalog**: `curl http://localhost:30080/v1/models`
 - **Bifrost MCP registration**: `bifrost` block in `modules/mcp/catalog.nix`
 - **Phase 3 audit matrix** (full PAL → native mapping):
-  [JacobPEvans/nix-ai#450](https://github.com/JacobPEvans/nix-ai/issues/450)
+  [amatos/dryvist-nix-ai#450](https://github.com/amatos/dryvist-nix-ai/issues/450)
