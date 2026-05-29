@@ -5,17 +5,9 @@
 
 ### Features
 
-* **nixpkgs:** bump stable channel from nixpkgs-25.11-darwin to nixpkgs-26.05-darwin
-* **home-manager:** bump home-manager input from release-25.11 to release-26.05
 * **repo:** migrate GitHub org/repo names from JacobPEvans/{nix-ai,nix-home,nix-darwin} to amatos/{dryvist-nix-ai,dryvist-nix-home,dryvist-nix-darwin}
 
-
-### Miscellaneous
-
-* update all stateVersion and stableVersion references from 25.11 to 26.05
-* update inline comments referencing nixpkgs-25.11 to nixpkgs-26.05 across modules/cecli, modules/mlx, modules/mcp, and modules/ai-tools
-
-## [1.68.1](https://github.com/JacobPEvans/nix-ai/compare/v1.68.0...v1.68.1) (2026-05-25)
+## [1.68.1](https://github.com/JacobPEvans/nix-ai/compare/v1.68.1...v1.68.1.1) (2026-05-25)
 
 
 ### Bug Fixes
