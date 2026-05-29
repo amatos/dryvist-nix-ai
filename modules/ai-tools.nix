@@ -38,7 +38,7 @@
 # CURRENT STATUS
 # ============================================================================
 #
-# NIXPKGS PACKAGES (from nixpkgs, available on stable 25.11):
+# NIXPKGS PACKAGES (from nixpkgs, available on stable 26.05):
 #   github-mcp-server, terraform-mcp-server, whisper-cpp, openai-whisper
 #
 # HOMEBREW PACKAGES (from modules/darwin/homebrew.nix):
@@ -68,7 +68,7 @@
 # ADDING NEW NIXPKGS PACKAGES
 # ============================================================================
 #
-# Packages are sourced from stable nixpkgs (25.11). To add a new one:
+# Packages are sourced from stable nixpkgs (26.05). To add a new one:
 #   1. Verify availability: nix search nixpkgs <package>
 #   2. Add to packages list below
 #   3. Add to version check script (scripts/workflows/check-package-versions.sh)

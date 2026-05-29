@@ -22,7 +22,7 @@ let
         home = {
           username = "test-user";
           homeDirectory = "/home/test-user";
-          stateVersion = "25.11";
+          stateVersion = "26.05";
         };
       }
     ];
@@ -41,7 +41,7 @@ let
         home = {
           username = "test-user";
           homeDirectory = "/home/test-user";
-          stateVersion = "25.11";
+          stateVersion = "26.05";
         };
         programs.fabric.enableServer = true;
       }

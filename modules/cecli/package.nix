@@ -5,7 +5,7 @@
 # modules/mcp/pal-package.nix.
 #
 # Two inline let-bound mini-derivations remain for transitive deps that
-# nixpkgs-25.11 either ships at an incompatible version or doesn't ship
+# nixpkgs-26.05 either ships at an incompatible version or doesn't ship
 # at all:
 #
 #   - mcp 1.24.0 (sdist override) — nixpkgs has 1.15; cecli imports
@@ -17,7 +17,7 @@
 #
 # Earlier revisions of this file inlined five additional derivations
 # (`diff-match-patch`, `tree-sitter-c-sharp`, `tree-sitter-embedded-template`,
-# `tree-sitter-yaml`, `tree-sitter-language-pack`). nixpkgs-25.11 now
+# `tree-sitter-yaml`, `tree-sitter-language-pack`). nixpkgs-26.05 now
 # ships all five at compatible versions, so those went away.
 #
 # Five soft version pins are relaxed via postPatch against
@@ -63,7 +63,7 @@ let
   };
 
   # mcp ≥ 1.24.0 added the streamable_http_client symbol that cecli
-  # imports unconditionally. nixpkgs-25.11 ships mcp 1.15, so we
+  # imports unconditionally. nixpkgs-26.05 ships mcp 1.15, so we
   # override locally for cecli only — other consumers keep the
   # nixpkgs version. This is one of the few pins we cannot relax via
   # postPatch because cecli imports a symbol that didn't exist yet.
@@ -118,9 +118,9 @@ python3Packages.buildPythonApplication {
     hash = "sha256-d1PZ2qco87+yQJPfzTxEygH1TLjXN+bwgrwaqTu8tls=";
   };
 
-  # nixpkgs-25.11 ships older versions of several deps than cecli's
+  # nixpkgs-26.05 ships older versions of several deps than cecli's
   # requirements/requirements.in lower bounds (gap is ~6 months — cecli
-  # 0.99.10 came out 2026-05-04, nixpkgs 25.11 froze in 2025-11).
+  # 0.99.10 came out 2026-05-04, nixpkgs 26.05 froze in 2026-05).
   # Functionally the older versions work; the lower bounds reflect
   # cecli upstream's "latest known good" tracking, not hard breakage.
   # Relax the bounds rather than carry five per-package overlay
@@ -181,7 +181,7 @@ python3Packages.buildPythonApplication {
       scipy
       importlib-metadata
       tree-sitter
-      # nixpkgs-25.11 added these after the initial revision of this
+      # nixpkgs-26.05 added these after the initial revision of this
       # file inlined them; using nixpkgs versions now.
       diff-match-patch
       tree-sitter-c-sharp

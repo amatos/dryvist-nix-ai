@@ -56,7 +56,7 @@ let
   '';
 in
 {
-  # Namespace note: home-manager 25.11+ ships `programs.mcp` (Claude Desktop
+  # Namespace note: home-manager 26.05+ ships `programs.mcp` (Claude Desktop
   # MCP integration). We use `programs.mcpRuntime` to avoid the collision —
   # this module is about PAL/Doppler/Splunk MCP runtime wrappers, not the
   # upstream Claude Desktop bridge.

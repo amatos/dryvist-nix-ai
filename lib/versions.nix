@@ -2,7 +2,7 @@
 # Used by GitHub Actions workflows for version monitoring
 #
 # stableVersion: Latest stable NixOS release branch
-# Format: "YY.MM" (e.g., "24.05" for May 2024 release, "25.11" for November 2025)
+# Format: "YY.MM" (e.g., "25.11" for November 2025 release, "26.05" for May 2026)
 #
 # Note: This repo uses nixpkgs-unstable in flake.nix for cutting-edge packages.
 # This field tracks the latest stable release for informational purposes only.
@@ -11,7 +11,7 @@
 # - .github/workflows/nixos-release-check.yml - automated update notifications
 # - .github/workflows/ci-eol-check.yml - end-of-life validation
 {
-  stableVersion = "25.11";
+  stableVersion = "26.05";
 
   # Package version pins — single source of truth for cross-module shared deps.
   # Each pin entry (below) must have a `# renovate:` annotation immediately above
